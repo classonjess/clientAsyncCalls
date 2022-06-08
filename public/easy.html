@@ -1,0 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.8.3/superagent.js"></script>
+
+<h1>Easy</h1>
+<script>
+    const url = '/account/create/peter/peter@mit.edu/secret'
+
+    function create(){
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            });
+    }
+    function invoke(){
+        create();
+    }
+</script>
